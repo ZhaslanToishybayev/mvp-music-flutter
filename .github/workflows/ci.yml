@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - name: Flutter Pub Get
+        working-directory: mvp_music
+        run: flutter pub get
+      - name: Analyze
+        working-directory: mvp_music
+        run: flutter analyze
+      - name: Test
+        working-directory: mvp_music
+        run: flutter test --no-pub
