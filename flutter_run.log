@@ -1,0 +1,134 @@
+Launching lib/main.dart on Linux in debug mode...
+Building Linux application...                                   
+✓ Built build/linux/x64/debug/bundle/mvp_music
+Syncing files to device Linux...                                   414ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on Linux is available at: http://127.0.0.1:35909/uLXYdAuY0fM=/
+The Flutter DevTools debugger and profiler on Linux is available at: http://127.0.0.1:9103?uri=http://127.0.0.1:35909/uLXYdAuY0fM=/
+[ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: MissingPluginException(No implementation found for method init on channel com.ryanheise.just_audio.methods)
+#0      MethodChannel._invokeMethod (package:flutter/src/services/platform_channel.dart:365:7)
+<asynchronous suspension>
+#1      MethodChannelJustAudio.init (package:just_audio_platform_interface/method_channel_just_audio.dart:13:5)
+<asynchronous suspension>
+#2      _PlayerAudioHandler._initPlayer.<anonymous closure> (package:just_audio_background/just_audio_background.dart:384:24)
+<asynchronous suspension>
+#3      BasicLock.synchronized (package:synchronized/src/basic_lock.dart:38:16)
+<asynchronous suspension>
+
+
+══╡ EXCEPTION CAUGHT BY SCHEDULER LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during a scheduler callback:
+There are multiple heroes that share the same tag within a subtree.
+Within each subtree for which heroes are to be animated (i.e. a PageRoute subtree), each Hero must
+have a unique non-null tag.
+In this case, multiple heroes had the following tag: art-2753115381
+├# Here is the subtree for one of the offending heroes: Hero
+
+When the exception was thrown, this was the stack:
+#0      Hero._allHeroesFor.inviteHero.<anonymous closure> (package:flutter/src/widgets/heroes.dart:277:11)
+#1      Hero._allHeroesFor.inviteHero (package:flutter/src/widgets/heroes.dart:293:8)
+#2      Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:311:11)
+#3      MultiChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7128:16)
+#4      Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#5      SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#6      Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#7      ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#8      Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#9      SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#10     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#11     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#12     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#13     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#14     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#15     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#16     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#17     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#18     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#19     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#20     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#21     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#22     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#23     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#24     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#25     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#26     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#27     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#28     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#29     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#30     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#31     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#32     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#33     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#34     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#35     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#36     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#37     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#38     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#39     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#40     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#41     MultiChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7128:16)
+#42     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#43     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#44     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#45     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#46     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#47     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#48     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#49     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#50     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#51     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#52     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#53     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#54     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#55     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#56     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#57     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#58     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#59     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#60     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#61     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#62     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#63     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#64     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#65     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#66     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#67     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#68     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#69     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#70     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#71     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#72     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#73     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#74     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#75     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#76     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#77     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#78     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#79     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#80     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#81     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5773:14)
+#82     Hero._allHeroesFor.visitor (package:flutter/src/widgets/heroes.dart:326:15)
+#83     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7004:14)
+#84     Element.visitChildElements (package:flutter/src/widgets/framework.dart:3879:5)
+#85     Hero._allHeroesFor (package:flutter/src/widgets/heroes.dart:329:13)
+#86     HeroController._startHeroTransition (package:flutter/src/widgets/heroes.dart:991:16)
+#87     HeroController._maybeStartHeroTransition.<anonymous closure> (package:flutter/src/widgets/heroes.dart:947:9)
+#88     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1434:15)
+#89     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1361:11)
+#90     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1200:5)
+#91     _invoke (dart:ui/hooks.dart:330:13)
+#92     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:444:5)
+#93     _drawFrame (dart:ui/hooks.dart:302:31)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Another exception was thrown: There are multiple heroes that share the same tag within a subtree.
+Another exception was thrown: There are multiple heroes that share the same tag within a subtree.
+Lost connection to device.
